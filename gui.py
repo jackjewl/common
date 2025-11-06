@@ -174,7 +174,6 @@ def mouse_scroll(step,after_sleep:float=0.5):
 
 def enter(after_sleep:float=0.5):
     """
-    
     :author: name
     :date: 2025/11/2
     :desc: 按下回车
@@ -185,3 +184,12 @@ def enter(after_sleep:float=0.5):
     """
     pyautogui.press("enter")
     time.sleep(after_sleep)
+
+
+
+
+# 确认框
+from tkinter import messagebox
+def confirm(msg:str):
+    result = messagebox.askyesno("确认", msg)
+    return result
